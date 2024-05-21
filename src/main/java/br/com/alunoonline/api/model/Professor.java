@@ -13,8 +13,8 @@ import java.io.Serializable;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity //anotacao
-public class Aluno implements Serializable {
+@Entity
+public class Professor implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
