@@ -35,5 +35,16 @@ public class ProfessorController {
         return professorService.findById(id);
     }
 
+    @PutMapping("{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void updade(@PathVariable Long id, @RequestBody Professor professor){
+        professorService.update(id, professor);
+    }
+
+    @DeleteMapping("{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void deleteById(@PathVariable Long id){
+        professorService.deleteById(id);
+    }
 
 }

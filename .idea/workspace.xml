@@ -5,14 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0b03eec-b0c0-47e0-9dd4-1ae6703d9961" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/alunoonline/api/controller/AlunoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/alunoonline/api/controller/ProfessorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/alunoonline/api/model/Professor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/alunoonline/api/repository/ProfessorRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/alunoonline/api/service/ProfessorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alunoonline/api/model/Aluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/alunoonline/api/model/Aluno.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/alunoonline/api/controller/DisciplinaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/alunoonline/api/controller/MatriculaAlunoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/alunoonline/api/enums/MatriculaAlunoStatusEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/alunoonline/api/model/Disciplina.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/alunoonline/api/model/MatriculaAluno.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/alunoonline/api/repository/DisciplinaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/alunoonline/api/repository/MatriculaAlunoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/alunoonline/api/service/DisciplinaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/alunoonline/api/service/MatriculaAlunoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alunoonline/api/controller/AlunoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/alunoonline/api/controller/AlunoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alunoonline/api/controller/ProfessorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/alunoonline/api/controller/ProfessorController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alunoonline/api/service/AlunoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/alunoonline/api/service/AlunoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alunoonline/api/service/ProfessorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/alunoonline/api/service/ProfessorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/alunoonline/api/controller/AlunoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/alunoonline/api/controller/AlunoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/alunoonline/api/controller/ProfessorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/alunoonline/api/controller/ProfessorController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/alunoonline/api/service/AlunoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/alunoonline/api/service/AlunoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/alunoonline/api/service/ProfessorService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/alunoonline/api/service/ProfessorService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +34,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -48,17 +59,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/klewertton/workspace uniesp/desenvolvimento backend/api&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/klewertton/workspace uniesp/desenvolvimento backend/api",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="AlunoOnlineApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.alunoonline.api.AlunoOnlineApplication" />

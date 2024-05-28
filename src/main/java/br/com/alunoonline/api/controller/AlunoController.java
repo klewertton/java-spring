@@ -5,6 +5,7 @@ import br.com.alunoonline.api.service.AlunoService;
 import br.com.alunoonline.api.service.ProfessorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -35,5 +36,18 @@ public class AlunoController {
     public Optional<Aluno> findById(@PathVariable Long id){
         return alunoService.findById(id);
     }
+
+    @PutMapping("{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void update(@PathVariable Long id, @RequestBody Aluno aluno) {
+        alunoService.update(id, aluno);
+    }
+
+    @DeleteMapping("{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void deleteById(@PathVariable Long id){
+        alunoService.deleteById(id);
+    }
+
 
 }
